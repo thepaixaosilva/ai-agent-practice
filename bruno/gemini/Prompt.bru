@@ -1,0 +1,21 @@
+meta {
+  name: Prompt
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/gemini
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "prompt": "Explique sobre o teorema de pitágoras."
+  }
+}
+
+settings {
+  encodeUrl: true
+}
